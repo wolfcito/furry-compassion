@@ -9,9 +9,7 @@
     "md": "./assets/icon.png"
   },
   "contact": "",
-  "screenshots": [
-    "./assets/screenShot.png"
-  ],
+  "screenshots": ["./assets/screenShot.png"],
   "entrypoints": {
     "default": {
       "web": "./web-build/index.html"

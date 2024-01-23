@@ -1,11 +1,14 @@
 {
   "private": true,
   "homepage": ".",
+  "main": "./index.js",
   "scripts": {
     "build": "expo export:web",
-    "start": "yarn build && npx xnft web",
+    "start": "expo start --dev-client",
     "bundle": "yarn build && npx xnft bundle",
-    "dev": "BROWSER=none expo start --web & npx xnft --iframe http://localhost:19006"
+    "dev": "BROWSER=none expo start --web & npx xnft --iframe http://localhost:19006",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "dependencies": {
     "@coral-xyz/anchor": "^0.27.0",
@@ -18,7 +21,7 @@
     "@react-navigation/stack": "6.2.1",
     "@solana/web3.js": "^1.73.0",
     "commander": "^9.4.1",
-    "expo": "~48.0.7",
+    "expo": "~48.0.21",
     "expo-constants": "~14.2.1",
     "expo-linking": "~4.0.1",
     "expo-status-bar": "~1.4.4",
@@ -35,7 +38,8 @@
     "react-native-web": "~0.18.12",
     "recoil": "*",
     "twrnc": "*",
-    "uuid": "*"
+    "uuid": "*",
+    "expo-splash-screen": "~0.18.2"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
@@ -47,5 +51,7 @@
   },
   "resolutions": {
     "react-error-overlay": "6.0.11"
-  }
+  },
+  "name": "furry-compassion",
+  "version": "1.0.0"
 }
